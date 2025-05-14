@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lange="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D soft drink model Viewer</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.154.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.154.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Interact with the 3D Model!</h1>
+    </header>
+
+    <nav>
+      <button id="sprite-button">Sprite Can</button>
+      <button id="bottle-button">Sprite Bottle</button>
+      <button id="cola-button">Cola Can</button>
+      <button id="rotate-button">Rotate</button>
+      <button id="wireframe-button">Wireframe</button>
+      <button id="clear-lights">Remove Lights</button>
+      <select id="lighting-select">
+        <option value="ambientOnly">Ambient Only</option>
+        <option value="directionalOnly">Directional Only</option>
+        <option value="pointOnly">Point Only</option>
+        <option value="spotOnly">Spotlight Only</option>
+        <option value="full">All Lights</option>
+      </select>
+      <div id="camera-controls">
+        <button id="camera-front">Front View</button>
+        <button id="camera-top">Top View</button>
+        <button id="camera-side">Side View</button>
+        <button id="camera-default">Default View</button>
+      </div>
+    </nav>
+
+    <main>
+      <div id="viewer"></div>
+    </main>
+
+    <div id="model-description" class="description-box">
+      <p>Select a model to see its details.</p>
+    </div>
+
+    <footer>
+      <a href="about.html"> About this project</a>
+    </footer>
+  </body>
+</html>

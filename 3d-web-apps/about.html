@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About - 3D Web Apps</title>
+    <link rel="stylesheet" href="css/about.css" />
+  </head>
+  <body>
+    <header>
+      <h1>About This Project</h1>
+    </header>
+
+    <main>
+      <section>
+        <p>
+          This 3D web app was created for the 3D Web Apps module at the
+          University of Sussex. The project focuses on showcasing 3D models of
+          Coca-Cola products — a Coke can, sprite can, and Sprite bottle — all
+          built in Blender and loaded into the browser using Three.js.
+        </p>
+      </section>
+
+      <section>
+        <h2>Development Process</h2>
+        <p>
+          The models were made in Blender, with attention to clean geometry and
+          proper materials. I used UV mapping to apply brand textures, and
+          exported the files as <code>.glb</code> to keep things lightweight and
+          compatible.
+        </p>
+        <p>
+          As for the website, I used a mix of HTML, CSS, and JavaScript.
+          Three.js was the main library for rendering the models. I followed the
+          basic MVC philosophy: the HTML acts as the View, JavaScript the logic
+          (Controller), and the models represent the Model part. I also added
+          some interactivity like wireframe toggles, lighting controls, and
+          buttons to switch between models different coloured lighting to make
+          it easier to discern the lightings effect on the models.
+        </p>
+      </section>
+
+      <section>
+        <h2>Design Choices</h2>
+        <p>
+          I wanted to keep the layout simple so the 3D models were the main
+          focus. I used a dark background to help the can textures stand out
+          better, and made sure the page was responsive so it works on both
+          laptops and phones.
+        </p>
+        <p>
+          The font and colors were kept clean and minimal, with some tweaks to
+          match the Coca-Cola aesthetic without overdoing it.
+        </p>
+      </section>
+
+      <section>
+        <h2>Accessibility</h2>
+        <p>
+          I tried to consider accessibility where possible — I used semantic
+          HTML, labeled buttons clearly, kept the contrast strong for
+          readability. There's still room for improvement, but it works decently
+          across different devices.
+        </p>
+      </section>
+
+      <section>
+        <h2>Testing</h2>
+        <p>
+          I ran the app locally with a Python HTTP server and tested it in
+          Chrome and Firefox. I checked that models loaded properly, buttons
+          worked, and that the site adjusted well to screen size changes using
+          my phone and macbook. I manually tested all the interactive features
+          like model switching, wireframe toggle, and lighting changes.
+        </p>
+      </section>
+
+      <section>
+        <h2>GitHub Link</h2>
+        <p>
+          Full code here:<br />
+          <a href="https://github.com/your-username/your-repo" target="_blank"
+            >GitHub Repository</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="home.html">← Back to Home</a></p>
+    </footer>
+  </body>
+</html>
